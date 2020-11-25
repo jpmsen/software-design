@@ -10,7 +10,6 @@ public class Main {
 
         console.print("Het is nu 06.00u");
 
-
         Student student1 = new Student("Jeffrey", 12345, "SDE", false);
         Student student2 = new Student("Flavio", 21345, "SDE", false);
 
