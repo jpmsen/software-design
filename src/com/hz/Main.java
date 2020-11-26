@@ -14,6 +14,7 @@ public class Main {
 
         ConsoleReader reader = new ConsoleReader();
         ConsoleWriter writer = new ConsoleWriter();
+        BooleanAdapter booleanAdapter = new WindowsBooleanAdapter(reader);
 
         // ask questions
         String q1 = "Do you like eating vegetables?";
@@ -24,16 +25,8 @@ public class Main {
         // ask question to user
         writer.write(q1);
 
-        // create list with all accepted answers
-        ArrayList<String> list = new ArrayList<String>();
-        Collections.addAll(list, "true", "yes", "oh yeah", "great", "sure", "love to", "of course", "always", "never done otherwise");
 
-        // create answer class and use an adapter to translate answers into a boolean.
-        Answer answer = new Answer(list);
-        AnswerAdapter answerAdapter = new AnswerAdapter(answer);
-
-        // read response
-        Boolean ans1 = answerAdapter.checkAnswer(reader.readLine());
+        Boolean ans1 = booleanAdapter.readLineBoolean();
 
         if (ans1) {
             writer.write(good);
