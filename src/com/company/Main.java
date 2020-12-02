@@ -1,9 +1,16 @@
 package com.company;
 
-import java.io.FileNotFoundException;
-
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
-        Console console = new Console();
+
+    public static void main(String[] args) {
+
+        // Lets print some cards
+        Printer printer = new Console();
+
+        // DEAR COLLEAGUE, PLEASE READ https://refactoring.guru/design-patterns/template-method
+        // THANK ME LATER
+        Card card = new HighSchoolGraduationCard(printer);
+
+        card.print();
     }
 }
