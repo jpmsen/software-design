@@ -1,5 +1,6 @@
 # IDE
 /.idea
+software-design.iml
 
 # Compiled class file
 *.class
