@@ -1,17 +1,12 @@
 package com.company;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
-
 public class Console {
 
-    public Console() throws FileNotFoundException {
-        System.setOut(new PrintStream(new File("studenten.txt")));
+    public static void write(String msg) {
+        System.out.println(msg);
     }
 
-    public void print(String msg) {
-        System.out.println(msg  );
+    public static void write(double msg) {
+        System.out.println(msg);
     }
-
 }
