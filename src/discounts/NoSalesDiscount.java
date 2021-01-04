@@ -1,5 +1,6 @@
-package com.company;
+package discounts;
 
+import com.company.Customer;
 import products.Product;
 
 public class NoSalesDiscount implements DiscountStrategy {

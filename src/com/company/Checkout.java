@@ -1,5 +1,9 @@
 package com.company;
 
+import discounts.BlackFridayDiscount;
+import discounts.ChristmasDiscount;
+import discounts.NoSalesDiscount;
+
 public class Checkout {
 
     private SalesAction salesAction;

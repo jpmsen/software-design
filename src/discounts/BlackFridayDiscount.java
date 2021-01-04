@@ -1,8 +1,7 @@
-package com.company;
+package discounts;
 
+import com.company.Customer;
 import products.Product;
-
-import java.util.ArrayList;
 
 public class BlackFridayDiscount implements DiscountStrategy {
     @Override

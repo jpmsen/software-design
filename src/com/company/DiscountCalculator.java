@@ -1,5 +1,6 @@
 package com.company;
 
+import discounts.DiscountStrategy;
 import products.Product;
 
 public class DiscountCalculator {
